@@ -3,6 +3,7 @@ import { logError, logInfo, logWarning } from './color.console.js';
 import { formateDate } from './date_formate.js';
 import { generateId } from './generateId.js';
 import add, { multiply, subtract } from './number.js';
+import { arrayFunctions, checkEvenOdd, confusion } from './others.js';
 
 // import multiply from "./number.js";
 console.log(add(65, 23));
@@ -24,3 +25,8 @@ console.log(id)
 logInfo('This is an info message');
 logWarning('This is a warning message');
 logError('This is an error message');
+
+//import others
+confusion('Alice', 30);
+checkEvenOdd(90);
+arrayFunctions([10, 42, 35, 64, 85]);
