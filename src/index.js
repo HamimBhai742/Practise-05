@@ -1,5 +1,6 @@
 import { hashPassword } from './bcrypt.js';
 import { formateDate } from './date_formate.js';
+import { generateId } from './generateId.js';
 import add, { multiply, subtract } from './number.js';
 
 // import multiply from "./number.js";
@@ -13,3 +14,7 @@ console.log(formateDate);
 //import from bcrypt
 const hasPass = await hashPassword('mypasswot');
 console.log(hasPass);
+
+// import { generateId } from './generateId.js';
+const id = generateId();
+console.log(id)
